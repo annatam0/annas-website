@@ -70,6 +70,19 @@ body {
     transition: 0.3s;
     padding: 1rem 0;
   }
+  .slide{
+    height: 400px !important; 
+    background-size: 100% 400px !important;
+    h1{
+      padding-top: 10rem !important;
+      font-size: 55px !important; 
+    }
+   
+  }
+  .btn{
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+  }
   .nav-links a{
     font-size: 15px !important;
   }
