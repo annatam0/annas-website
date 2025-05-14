@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Anna's Website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo"><img src="logo.PNG" class="logo-img"></a>
+        <ul class="nav-links">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Gallery</a>
+          <a href="">Contacts</a>
+        </ul>
+        <button class="dropdown">☰</button>
+      </div>
+    </nav>
+    <div class="slide">
+      <div class="filter">
+        <h1>Welcome</h1>
+        <a class="btn" href="https://www.youtube.com/" target="_blank">Get Started</a>
+      </div>
+      </div>
+  </body>
+</html>
+<script>
+  const dropdown = document.querySelector(".dropdown");
+  const navLinks = document.querySelector(".nav-links");
+ dropdown.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  }); // Close menu when clicking on a link document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
+</script>

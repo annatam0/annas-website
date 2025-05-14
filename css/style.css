@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Navfont";
+  src: url("../fonts/navfont.ttf");
+}
+@font-face {
+  font-family: "welcome";
+  src: url("../fonts/welcome.ttf");
+}
+nav {
+  background-color: #f2ebe9;
+  padding: 4rem;
+}
+body {
+  background-color: #eddcd9;
+}
+* {
+  margin: 0;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #de5499;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Navfont";
+  transition: 0.3s
+}
+.nav-links :hover {
+  color: black;
+  transition: 0.3s;
+  font-size: 28px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+.dropdown {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .dropdown {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    right: -100%;
+    top: 140px;
+    gap: 0;
+    flex-direction: column;
+    background:#f5e5e0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 1rem 0;
+  }
+  .nav-links a{
+    font-size: 15px !important;
+  }
+  .nav-links.active {
+    right: 0;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+  .logo-img {
+    width: 65px !important;
+    margin-top: 20px;
+  }
+  nav{
+    padding: 1rem 3rem !important;
+  }
+  
+}
+.logo-img {
+  width: 90px;
+}
+.slide {
+  background-image: url("../images/bg.jpg");
+  width: 100%;
+  height: 800px;
+  background-size: 100% 800px ;
+h1{
+  padding-top: 20rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: white;
+  font-size: 120px;
+  font-family: "welcome";
+  letter-spacing: 20px;
+}
+}
+.filter {
+  width: 100%;
+  height: 800px;
+  background-color: rgba(167, 91, 126, 0.137);
+}
+.btn {
+  background-color: #de5499;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 50px;
+  font-size: 24px;
+  border: 5px solid rgba(255, 255, 255, 0.651);
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  transition: 1s;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: black;
+  transition: 1s;
+}
