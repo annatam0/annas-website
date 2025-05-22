@@ -9,7 +9,7 @@
   <body>
     <nav>
       <div class="nav-container">
-        <a href="#" class="logo"><img src="logo.PNG" class="logo-img"></a>
+        <a href="#" class="logo"><img src="logo.PNG" class="logo-img" /></a>
         <ul class="nav-links">
           <a href="">Home</a>
           <a href="">About</a>
@@ -22,15 +22,32 @@
     <div class="slide">
       <div class="filter">
         <h1>Welcome</h1>
-        <a class="btn" href="https://www.youtube.com/" target="_blank">Get Started</a>
+        <a class="btn" href="https://www.youtube.com/" target="_blank"
+          >Get Started</a
+        >
       </div>
+    </div>
+    <section class="container">
+      <h1 class="section-title">About Me</h1>
+      <p class="section-para">
+        Hi! My name is Anna, and i am a 14 year-old student from Isle of Man. I created this website to share some of my favorite
+        hobbies and the things I love doing in my free time. I’m creative and a
+        curious person who enjoys exploring new ideas, learning new skills, and
+        having fun while doing it. Whether I’m singing, dancing, acting or even playing the piano, I always find joy in the little things.
+        Thanks for visiting my page— I hope you enjoy learning more about me!
+      </p>
+      <div class="img-list">
+        <img src="images/sing.jpg" alt="">
+        <img src="images/piano_6.jpg" alt="">
+        <img src="images/ballet.jpg" alt="">
       </div>
+    </section>
   </body>
 </html>
 <script>
   const dropdown = document.querySelector(".dropdown");
   const navLinks = document.querySelector(".nav-links");
- dropdown.addEventListener("click", () => {
+  dropdown.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   }); // Close menu when clicking on a link document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
 </script>
