@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Anna's Website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo"><img src="logo.PNG" class="logo-img" /></a>
+        <ul class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="singing.html">Singing</a>
+          <a href="dancing.html">Dancing</a>
+          <a href="piano.html">Piano</a>
+          <a href="contacts.html">Contacts</a>
+          <a href="#"
+        id="theme-toggle"><i class="fa fa-moon"></i> Mode</a>
+        </ul>
+        <button class="dropdown">☰</button>
+      </div>
+    </nav>
+    <div class="slide">
+      <div class="filter">
+        <h1>About</h1>
+        <a class="btn" href="https://www.youtube.com/" target="_blank"
+          >Get Started</a
+        >
+      </div>
+    </div> <section class="container">
+   
+      <h1 class="section-title">About Me</h1>
+      <p class="section-para">
+        Hi! My name is Anna, and i am a 14 year-old student from the Isle of
+        Man. I created this website to share some of my favorite hobbies and the
+        things I love doing in my free time. I’m creative and a curious person
+        who enjoys exploring new ideas, learning new skills, and having fun
+        while doing it. Whether I’m singing, dancing, acting or even playing the
+        piano, I always find joy in the little things. Thanks for visiting my
+        page— I hope you enjoy learning more about me!
+      </p>
+      <div class="img-list">
+        <img src="images/sing.jpg" alt="" />
+        <img src="images/piano_6.jpg" alt="" />
+        <img src="images/ballet.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="container">
+      <h1 class="section-title">What I do</h1>
+      <div class="row">
+        <div class="left-side col-6">
+          <img class="row-img" src="images/sing.jpg" width="100%" alt="" />
+        </div>
+        <div class="right-side col-6">
+          <p class="section-para2" style="padding-top: 7rem">
+            My singing journey began as a simple love for music, humming
+            melodies and mimicking songs that moved me. Over time, that passion
+            grew into a deeper calling — one that pushed me to find my voice,
+            train it, and share it with the world. From small performances to
+            studio recordings, every step has been a reflection of my growth,
+            emotion, and dedication. Singing isn't just something I do — it's
+            who I am.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-side  col-6">
+          <img class="row-img" src="images/piano_6.jpg" width="100%" alt="" />
+        </div>
+     
+        <div class="right-side col-6">
+          <p class="section-para2" style="padding-top: 4rem">
+            Playing the piano fills me with a sense of joy and peace that
+            nothing else can quite match. It’s my way of expressing emotions
+            that words can’t capture—whether it’s happiness, sadness, or just
+            the calm of a quiet moment. I love the feeling of my fingers gliding
+            over the keys, bringing melodies to life and creating something
+            beautiful from silence. The piano is more than an instrument to me;
+            it’s a part of who I am.
+          </p>
+        </div>
+
+        
+
+      <div class="row">
+        <div class="left-side col-6">
+          <img class="row-img" src="images/ballet.jpg" width="100%" alt="" />
+        </div>
+        <div class="right-side col-6">
+          <p class="section-para2" style="padding-top: 8rem">
+            I absolutely love to dance—it's how I express myself and have the
+            most fun! I train in ballet, tap, and jazz, and I also enjoy
+            performing in musical theatre. Each style lets me tell a different
+            kind of story through movement, whether it's the grace of ballet,
+            the rhythm of tap, or the energy of jazz. Dance is a huge part of
+            who I am, and I’m always excited to keep learning and growing as a
+            performer.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  const dropdown = document.querySelector(".dropdown");
+  const navLinks = document.querySelector(".nav-links");
+  dropdown.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  }); // Close menu when clicking on a link document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
+</script>
+<script src="js/theme.js"></script>
